@@ -1,0 +1,14 @@
+<div class="post-card">
+  <div class="release-info">
+    <img src="../../../../assets/images/time.png" alt="release-times">
+      {{news.created_at | dateAgo }} by {{news.author}}
+  </div>
+  <div class="post-title">
+    <h5> {{news.story_title}} </h5>
+  </div>
+  <div class="like-checkbox">
+    <span (click)="toggleFave()">
+      <i class="{{ activeFave ? 'fas fa-heart' : 'far fa-heart' }}"></i>
+    </span>
+  </div>
+</div>

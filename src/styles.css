@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+body, html {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fcfcfc;
+    overflow-x: hidden;
+}

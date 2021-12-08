@@ -1,0 +1,16 @@
+<app-hacker-header></app-hacker-header>
+<div class="container">
+    <main >
+        <div class="page-tab">
+            <app-tabs></app-tabs>
+        </div>
+        <div class="tabcontent">
+            <select id="posts-language" #types class="select-news" (change)="loadNews(types.value)">
+                <option *ngFor="let type of typesLanguage" [value]="type">{{ type }}</option>
+            </select>
+        </div>
+        <div class="hacker-news" *ngFor="let newsItem of news">
+            <app-hacker-news [news]="newsItem"></app-hacker-news>
+        </div>
+    </main>
+</div>
